@@ -16,6 +16,11 @@
 		5BF11D2827AA70A70052019C /* AdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D2727AA70A70052019C /* AdapterTests.swift */; };
 		5BF11D3227AA70A70052019C /* AdapterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D3127AA70A70052019C /* AdapterUITests.swift */; };
 		5BF11D3427AA70A70052019C /* AdapterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D3327AA70A70052019C /* AdapterUITestsLaunchTests.swift */; };
+		5BF11D4127AA711E0052019C /* GoogleAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D4027AA711E0052019C /* GoogleAuthenticator.swift */; };
+		5BF11D4327AA85020052019C /* TwitterAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D4227AA85020052019C /* TwitterAuthenticatior.swift */; };
+		5BF11D4627AA89100052019C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D4527AA89100052019C /* AuthenticationService.swift */; };
+		5BF11D4927AA8A180052019C /* GoogleAuthenticatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D4827AA8A180052019C /* GoogleAuthenticatorAdapter.swift */; };
+		5BF11D4B27AA8B990052019C /* TwitterAuthenticatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11D4A27AA8B990052019C /* TwitterAuthenticatorAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		5BF11D2D27AA70A70052019C /* AdapterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF11D3127AA70A70052019C /* AdapterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterUITests.swift; sourceTree = "<group>"; };
 		5BF11D3327AA70A70052019C /* AdapterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BF11D4027AA711E0052019C /* GoogleAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticator.swift; sourceTree = "<group>"; };
+		5BF11D4227AA85020052019C /* TwitterAuthenticatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthenticatior.swift; sourceTree = "<group>"; };
+		5BF11D4527AA89100052019C /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		5BF11D4827AA8A180052019C /* GoogleAuthenticatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticatorAdapter.swift; sourceTree = "<group>"; };
+		5BF11D4A27AA8B990052019C /* TwitterAuthenticatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthenticatorAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		5BF11D0F27AA70A60052019C /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				5BF11D4727AA8A0C0052019C /* Adapter */,
 				5BF11D1027AA70A60052019C /* AppDelegate.swift */,
 				5BF11D1227AA70A60052019C /* SceneDelegate.swift */,
 				5BF11D1427AA70A60052019C /* ViewController.swift */,
@@ -106,6 +117,7 @@
 				5BF11D1927AA70A60052019C /* Assets.xcassets */,
 				5BF11D1B27AA70A60052019C /* LaunchScreen.storyboard */,
 				5BF11D1E27AA70A60052019C /* Info.plist */,
+				5BF11D4427AA851E0052019C /* Auth */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -125,6 +137,25 @@
 				5BF11D3327AA70A70052019C /* AdapterUITestsLaunchTests.swift */,
 			);
 			path = AdapterUITests;
+			sourceTree = "<group>";
+		};
+		5BF11D4427AA851E0052019C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11D4027AA711E0052019C /* GoogleAuthenticator.swift */,
+				5BF11D4227AA85020052019C /* TwitterAuthenticatior.swift */,
+				5BF11D4527AA89100052019C /* AuthenticationService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5BF11D4727AA8A0C0052019C /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11D4827AA8A180052019C /* GoogleAuthenticatorAdapter.swift */,
+				5BF11D4A27AA8B990052019C /* TwitterAuthenticatorAdapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF11D4127AA711E0052019C /* GoogleAuthenticator.swift in Sources */,
+				5BF11D4B27AA8B990052019C /* TwitterAuthenticatorAdapter.swift in Sources */,
 				5BF11D1527AA70A60052019C /* ViewController.swift in Sources */,
+				5BF11D4927AA8A180052019C /* GoogleAuthenticatorAdapter.swift in Sources */,
 				5BF11D1127AA70A60052019C /* AppDelegate.swift in Sources */,
+				5BF11D4627AA89100052019C /* AuthenticationService.swift in Sources */,
 				5BF11D1327AA70A60052019C /* SceneDelegate.swift in Sources */,
+				5BF11D4327AA85020052019C /* TwitterAuthenticatior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
